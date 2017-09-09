@@ -1,0 +1,9 @@
+const POMODORO = 'POMODORO';
+const SHORT_BREAK = 'SHORT_BREAK';
+const LONG_BREAK = 'LONG_BREAK';
+
+export {
+  POMODORO,
+  SHORT_BREAK,
+  LONG_BREAK
+};
