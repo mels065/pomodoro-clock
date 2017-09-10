@@ -4,26 +4,32 @@ import {
   LONG_BREAK
 } from '../utils/constants';
 
-function pomodoroSettingAction = () => {
+function pomodoroSettingAction() {
   return {
     type: POMODORO,
-    minutes: 25,
-    seconds: 0
+    initialMinutes: 25,
+    initialSeconds: 0
   };
 }
 
-function shortBreakSettingAction = () => {
+function shortBreakSettingAction() {
   return {
     type: SHORT_BREAK,
-    minutes: 5,
-    seconds: 0
+    initialMinutes: 5,
+    initialSeconds: 0
   };
 }
 
-function longBreakSettingAction = () => {
+function longBreakSettingAction() {
   return {
     type: LONG_BREAK,
-    minutes: 10,
-    seconds: 0
+    initialMinutes: 10,
+    initialSeconds: 0
   };
 }
+
+export {
+  pomodoroSettingAction,
+  shortBreakSettingAction,
+  longBreakSettingAction
+};

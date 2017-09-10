@@ -1,4 +1,4 @@
-import Redux from 'redux';
+import {combineReducers} from 'redux';
 
 import {
   POMODORO,
@@ -6,21 +6,24 @@ import {
   LONG_BREAK
 } from '../utils/constants';
 
-function timeSettingReducer(state = {minutes: 25, seconds: 0}, action) {
+function timeSettingReducer(state = {
+                                      initialMinutes: 25,
+                                      initialSeconds: 0
+                                    }, action) {
   switch(action.type) {
     case POMODORO:
     case SHORT_BREAK:
     case LONG_BREAK:
       return {
-        minutes: action.minutes,
-        seconds: actions.seconds
+        initialMinutes: action.initialMinutes,
+        initialSeconds: action.initialSeconds
       };
     default:
       return state;
   }
 }
 
-const rootReducer = Redux.combineReducers({
+const rootReducer = combineReducers({
   timeSetting: timeSettingReducer
 });
 
