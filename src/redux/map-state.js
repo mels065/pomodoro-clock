@@ -2,7 +2,7 @@ import {
   pomodoroSettingAction,
   shortBreakSettingAction,
   longBreakSettingAction
-};
+} from './action-creators';
 
 function mapStateToProps(state) {
   return {
