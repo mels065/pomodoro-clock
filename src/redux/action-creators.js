@@ -4,7 +4,7 @@ import {
   LONG_BREAK
 } from '../utils/constants';
 
-function pomodoroTimeAction = () => {
+function pomodoroSettingAction = () => {
   return {
     type: POMODORO,
     minutes: 25,
@@ -12,7 +12,7 @@ function pomodoroTimeAction = () => {
   };
 }
 
-function shortBreakTimeAction = () => {
+function shortBreakSettingAction = () => {
   return {
     type: SHORT_BREAK,
     minutes: 5,
@@ -20,7 +20,7 @@ function shortBreakTimeAction = () => {
   };
 }
 
-function longBreakTimeAction = () => {
+function longBreakSettingAction = () => {
   return {
     type: LONG_BREAK,
     minutes: 10,
