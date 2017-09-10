@@ -6,6 +6,7 @@ import Presentational from './Presentational';
 describe('Presentational', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Presentational />, div);
+    ReactDOM.render(<Presentational
+                      initialTime={{minutes: 25, seconds: 0}} />, div);
   });
 });

@@ -6,8 +6,7 @@ import {
 
 function mapStateToProps(state) {
   return {
-    initialMinutes: state.initialMinutes,
-    initialSeconds: state.initialSeconds
+    initialTime: state.timeSetting
   };
 }
 

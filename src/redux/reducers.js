@@ -7,16 +7,16 @@ import {
 } from '../utils/constants';
 
 function timeSettingReducer(state = {
-                                      initialMinutes: 25,
-                                      initialSeconds: 0
+                                      minutes: 25,
+                                      seconds: 0
                                     }, action) {
   switch(action.type) {
     case POMODORO:
     case SHORT_BREAK:
     case LONG_BREAK:
       return {
-        initialMinutes: action.initialMinutes,
-        initialSeconds: action.initialSeconds
+        minutes: action.minutes,
+        seconds: action.seconds
       };
     default:
       return state;

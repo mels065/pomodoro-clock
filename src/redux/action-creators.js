@@ -7,24 +7,24 @@ import {
 function pomodoroSettingAction() {
   return {
     type: POMODORO,
-    initialMinutes: 25,
-    initialSeconds: 0
+    minutes: 25,
+    seconds: 0
   };
 }
 
 function shortBreakSettingAction() {
   return {
     type: SHORT_BREAK,
-    initialMinutes: 5,
-    initialSeconds: 0
+    minutes: 5,
+    seconds: 0
   };
 }
 
 function longBreakSettingAction() {
   return {
     type: LONG_BREAK,
-    initialMinutes: 10,
-    initialSeconds: 0
+    minutes: 10,
+    seconds: 0
   };
 }
 
