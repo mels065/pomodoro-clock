@@ -1,8 +1,7 @@
 .Clock .time {
-  background-color: #ffae4c;
-  border: 5px solid #5e4cff;
+  background-color: #5e4cff;
   border-radius: 10%;
-  font-size: 180px;
+  font-size: 10em;
   line-height: 190px;
   margin: 30px auto;
   height: 200px;
