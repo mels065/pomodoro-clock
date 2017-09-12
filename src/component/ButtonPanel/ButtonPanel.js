@@ -7,7 +7,7 @@ class ButtonPanel extends Component {
   render() {
     return (
       <div className="ButtonPanel">
-        <div className="time-setting-panel">
+        <div id="time-setting-panel" className="panel">
           <Button
             buttonLabel="Pomodoro"
             clickHandler={this.props.pomodoroSetting} />
@@ -18,7 +18,7 @@ class ButtonPanel extends Component {
             buttonLabel="Long Break"
             clickHandler={this.props.longBreakSetting} />
         </div>
-        <div className="time-control-panel">
+        <div id="time-control-panel" className="panel">
           <Button
             buttonLabel="Start"
             clickHandler={this.props.startControl} />

@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+button {
+  background-color: #d3d4ce;
+  font-family: 'Droid Sans Mono', monospace;
+  margin: 10px;
+  height: 40px;
+}

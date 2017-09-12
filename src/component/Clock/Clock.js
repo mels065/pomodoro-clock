@@ -4,6 +4,7 @@ import './Clock.css';
 import ButtonPanel from '../ButtonPanel/ButtonPanel';
 
 import {renderSeconds} from '../../utils/render-seconds';
+import timerSFX from '../../assets/timer.flac';
 
 class Clock extends Component {
   constructor(props) {
@@ -48,7 +49,7 @@ class Clock extends Component {
         seconds: this.state.seconds - 1
       });
       if (this.state.minutes === 0 && this.state.seconds === 0) {
-        /*play sound*/
+        new Audio(timerSFX).play();
       }
     }
   }
