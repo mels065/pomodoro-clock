@@ -1,7 +1,13 @@
 import {
   POMODORO,
   SHORT_BREAK,
-  LONG_BREAK
+  LONG_BREAK,
+  START,
+  STOP,
+  RESET,
+  UPDATE_FINISHED,
+  RESET_FINISHED,
+  TESTING_SETTING
 } from '../utils/constants';
 
 function pomodoroSettingAction() {
@@ -28,8 +34,44 @@ function longBreakSettingAction() {
   };
 }
 
+function updateFinishedAction() {
+  return {
+    type: UPDATE_FINISHED
+  };
+}
+
+function startAction(cb) {
+  return {
+    type: START,
+    cb
+  };
+}
+
+function stopAction() {
+  return {
+    type: STOP
+  };
+}
+
+function resetAction() {
+  return {
+    type: RESET
+  };
+}
+
+function resetFinishedAction() {
+  return {
+    type: RESET_FINISHED
+  };
+}
+
 export {
   pomodoroSettingAction,
   shortBreakSettingAction,
-  longBreakSettingAction
+  longBreakSettingAction,
+  updateFinishedAction,
+  startAction,
+  stopAction,
+  resetAction,
+  resetFinishedAction
 };

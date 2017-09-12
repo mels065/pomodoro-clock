@@ -8,8 +8,20 @@ class Presentational extends Component {
     return (
       <div className="Presentational">
         <Clock
-          initialMinutes={this.props.initialTime.minutes}
-          initialSeconds={this.props.initialTime.seconds} />
+          initialMinutes={this.props.initialMinutes}
+          initialSeconds={this.props.initialSeconds}
+          ticking={this.props.ticking}
+          updating={this.props.updating}
+          resetting={this.props.resetting}
+          finishedUpdating={this.props.updateFinishedSetting}
+          finishedResetting={this.props.resetFinishedControl}
+
+          pomodoroSetting={this.props.pomodoroSetting}
+          shortBreakSetting={this.props.shortBreakSetting}
+          longBreakSetting={this.props.longBreakSetting}
+          startControl={this.props.startControl}
+          stopControl={this.props.stopControl}
+          resetControl={this.props.resetControl} />
       </div>
     )
   }
