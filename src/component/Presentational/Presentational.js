@@ -28,7 +28,7 @@ class Presentational extends Component {
             resetControl={this.props.resetControl} />
         </main>
         <footer>
-          <div class="copyright">Brandon Mellus &copy; (2017)</div>
+          <div className="copyright">Brandon Mellus &copy; (2017)</div>
         </footer>
       </div>
     )
