@@ -7,7 +7,6 @@ import {
   RESET,
   UPDATE_FINISHED,
   RESET_FINISHED,
-  TESTING_SETTING
 } from '../utils/constants';
 
 function pomodoroSettingAction() {
