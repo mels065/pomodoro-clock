@@ -1,5 +1,11 @@
 .panel {
-  background-color: #5e4cff;
   margin: 10px auto;
   width: 25%;
+}
+
+@media screen and (max-width: 512px) and (orientation: portrait) {
+  .panel {
+    display: inline-block;
+    width: 100%;
+  }
 }

@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
 
 button {
-  background-color: #787874;
+  background-color: white;
   font-family: 'Droid Sans Mono', monospace;
   margin: 10px;
   height: 40px;
+}
+
+@media screen and (max-width: 512px) and (orientation: portrait) {
+  button {
+    font-size: 2.3vw;
+    width: 20%;
+  }
 }

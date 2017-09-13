@@ -1,5 +1,9 @@
-.Presentational {
+.Presentational header, .Presentational main {
   margin: 0 auto;
   text-align: center;
   width: 80%;
+}
+
+h1 {
+  font-size: 4vw;
 }
